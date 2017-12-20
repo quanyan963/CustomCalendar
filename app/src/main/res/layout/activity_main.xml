@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.txtled.customcalendar.MainActivity"
+    android:orientation="vertical">
+
+
+    <com.example.txtled.customcalendar.CustomCalendar
+        xmlns:CustomCalendar="http://schemas.android.com/apk/res/com.example.txtled.customcalendar"
+        android:id="@+id/cc_calendar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        CustomCalendar:dateFormat="MM yyyy">
+        <!-- app:dateFormat="MM yyyy" app  namespase不可以这样直接使用,需要自定义的命名空间才能保证attrs能够被正确的读取到-->
+    </com.example.txtled.customcalendar.CustomCalendar>
+</LinearLayout>
